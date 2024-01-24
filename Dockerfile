@@ -1,5 +1,8 @@
 FROM python:2.7.18-alpine
 
+# alpine 용 mysqlclient 설치용 패키지
+RUN apk add gcc musl-dev mariadb-connector-c-dev
+
 WORKDIR /app
 
 COPY . .
