@@ -1,8 +1,8 @@
 from django.conf.urls import url, include
 
-from .views import get_members, get_member_for_id
+from .views import member_details, member_create_read_all
 
 urlpatterns = [
-  url(r'^$', get_members),
-  url(r'(?P<id>\d+)/$', get_member_for_id),
+  url(r'^$', member_create_read_all),
+  url(r'(?P<id>\d+)/$', member_details),
 ]

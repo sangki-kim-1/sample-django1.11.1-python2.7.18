@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Member
 
 # serializer.py
-class memberSerializer(serializers.ModelSerializer):
+class MemberSerializer(serializers.ModelSerializer):
   class Meta:
     model=Member
     fields= ['id', 'email']
