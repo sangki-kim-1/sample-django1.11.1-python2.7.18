@@ -78,13 +78,13 @@ WSGI_APPLICATION = 'restapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'ENGINE': 'mysql.connector.django',
         'NAME': 'project_db',
         'USER': 'root',
         'PASSWORD': 'password1!',
         'HOST': '10.78.95.55',
         # 'HOST': '192.168.1.29',
-        'PORT': '13306',
+        'PORT': '13306', # MySQL
+        # 'PORT': '13307', # MariaDB
     }
 }
 
