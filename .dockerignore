@@ -1,2 +1,6 @@
-.venv
+db
+.idea
 .git*
+.venv
+venv
+virtualenv
