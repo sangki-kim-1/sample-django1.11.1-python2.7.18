@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUILD_NAME=sample-image
+BUILD_NAME=sample-python2-django-api-db
 
 docker rmi $BUILD_NAME
 docker build -t $BUILD_NAME .
