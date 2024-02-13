@@ -81,12 +81,25 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'project_db',
+
+        # docker-compose MySQL
+        # 'USER': 'root',
+        # 'PASSWORD': 'password1!',
+        # 'HOST': '10.78.95.55',
+        # # 'HOST': '192.168.1.29',
+        # 'PORT': '13306',
+
+        # docker-compose MariaDB
+        # 'USER': 'root',
+        # 'PASSWORD': 'password1!',
+        # 'HOST': '10.78.95.55',
+        # 'PORT': '13307',
+
+        # k8s Core DNS MariaDB
         'USER': 'root',
-        'PASSWORD': 'password1!',
-        'HOST': '10.78.95.55',
-        # 'HOST': '192.168.1.29',
-        'PORT': '13306', # MySQL
-        # 'PORT': '13307', # MariaDB
+        'PASSWORD': '1234',
+        'HOST': 'app-ece54997aad01c9932b419a1c5a77d2c-chart.50000-159a6b.svc.cluster.local',
+        'PORT': '3306',
     }
 }
 
