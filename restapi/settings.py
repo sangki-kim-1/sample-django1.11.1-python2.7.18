@@ -97,8 +97,8 @@ DATABASES = {
 
         # k8s Core DNS MariaDB
         'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': 'app-ece54997aad01c9932b419a1c5a77d2c-chart.50000-159a6b.svc.cluster.local',
+        'PASSWORD': 'password1!',
+        'HOST': 'app-d39a8e1f53ce74efc5c189686f9d92d5-chart.50010-9cdcd4.svc.cluster.local',
         'PORT': '3306',
     }
 }
