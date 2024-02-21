@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic import RedirectView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^members/v1', include('member.urls')),
-    url(r'^', include('member.urls')),
+    url(r'^members/v1/', include('member.urls')),
+    url(r'^', RedirectView.as_view(url='/members/v1/')),
 ]
