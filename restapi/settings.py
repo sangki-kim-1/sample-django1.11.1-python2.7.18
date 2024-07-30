@@ -82,31 +82,6 @@ DATABASES = {
         # InMemory sqlite3
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-
-        # docker-compose MySQL
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'project_db',
-        # 'USER': 'root',
-        # 'PASSWORD': 'password1!',
-        # 'HOST': '10.78.95.55',
-        # # 'HOST': '192.168.1.29',
-        # 'PORT': '13306',
-
-        # docker-compose MariaDB
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'project_db',
-        # 'USER': 'root',
-        # 'PASSWORD': 'password1!',
-        # 'HOST': '10.78.95.55',
-        # 'PORT': '13307',
-
-        # k8s Core DNS MariaDB
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'project_db',
-        # 'USER': 'root',
-        # 'PASSWORD': 'password1!',
-        # 'HOST': 'app-d39a8e1f53ce74efc5c189686f9d92d5-chart.50010-9cdcd4.svc.cluster.local',
-        # 'PORT': '3306',
     }
 }
 
@@ -148,6 +123,10 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+
 
 # CORS_ORIGIN_WHITELIST = ['http://10.78.95.55:3000','http://localhost:3000']
 CORS_ORIGIN_ALLOW_ALL = True
